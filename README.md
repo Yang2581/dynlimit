@@ -18,8 +18,6 @@ This folder is a **stable end-user snapshot**. Default workflow uses the **Mock*
 
 ## Demos
 
-Six 30-second captures from the bundled assets, recorded at 640×360.
-
 **1. A simulation run.** Choose a scenario, controller, and plant in **Live**, then start the loop and watch states and telemetry update together.
 
 ![A simulation run](gifs/01_simulation.gif)
@@ -76,7 +74,7 @@ dynlimit-api
 ```
 
 - API: http://127.0.0.1:8000  
-- OpenAPI: http://127.0.0.1:8000/docs  
+- OpenAPI: http://127.0.0.1:8000/docs
 
 **Terminal 2 — UI**
 
