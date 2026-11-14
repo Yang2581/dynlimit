@@ -16,6 +16,34 @@ This folder is a **stable end-user snapshot**. Default workflow uses the **Mock*
 - Demo assets: `4highway` track + `4highway_demo` scenario
 - `carsim_db` configured via `dynlimit.toml` (`[paths].carsim_db`), with CLI/env overrides
 
+## Demos
+
+Six 30-second captures from the bundled assets, recorded at 640×360.
+
+**1. A simulation run.** Choose a scenario, controller, and plant in **Live**, then start the loop and watch states and telemetry update together.
+
+![A simulation run](gifs/01_simulation.gif)
+
+**2. Switching views.** Chase, orbit, and top-down cameras on the same run; the simulation keeps stepping while the view changes.
+
+![Switching views](gifs/02_view_switch.gif)
+
+**3. Editing a scenario.** Add and drag track geometry in **Edit**, then save it back as a track or scenario asset.
+
+![Editing a scenario](gifs/03_editor.gif)
+
+**4. Attaching CarSim.** Select the CarSim plant and run the same controller through the external solver instead of the built-in model.
+
+![Attaching CarSim](gifs/04_carsim_plugin.gif)
+
+**5. Replay management.** Browse the stored experiments in **Replay**, open one record, and step through it.
+
+![Replay management](gifs/05_replay.gif)
+
+**6. Replaying a CarSim run.** Replay a record written by the CarSim plant; no solver is needed to review it.
+
+![Replaying a CarSim run](gifs/06_carsim_replay.gif)
+
 ## Requirements
 
 - Python ≥ 3.10

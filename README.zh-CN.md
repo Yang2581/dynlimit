@@ -16,6 +16,34 @@
 - 演示资源：`4highway` 赛道 + `4highway_demo` 场景
 - 通过 `dynlimit.toml` 的 `[paths].carsim_db` 配置 CarSim 数据集路径（仍可用 CLI/环境变量覆盖）
 
+## 演示
+
+以下六段录屏均取自快照自带资源，各 30 秒，640×360。
+
+**1. 仿真实例。** 在 **Live** 中选择场景、控制器与 plant，启动闭环并观察状态与遥测同步刷新。
+
+![仿真实例](gifs/01_simulation.gif)
+
+**2. 切换视角。** 同一次运行中切换跟随、环绕与俯视视角，切换时仿真继续步进。
+
+![切换视角](gifs/02_view_switch.gif)
+
+**3. 编辑界面。** 在 **Edit** 中增删、拖拽赛道几何，并保存为 track 或 scenario 资源。
+
+![编辑界面](gifs/03_editor.gif)
+
+**4. 接入 CarSim。** 选择 CarSim plant，让同一控制器改由外部求解器推进。
+
+![接入 CarSim](gifs/04_carsim_plugin.gif)
+
+**5. 回放管理。** 在 **Replay** 中浏览已存实验、打开一条记录并逐步查看。
+
+![回放管理](gifs/05_replay.gif)
+
+**6. 使用 CarSim 回放。** 回放由 CarSim plant 写出的记录，查看时无需求解器。
+
+![使用 CarSim 回放](gifs/06_carsim_replay.gif)
+
 ## 环境要求
 
 - Python ≥ 3.10
