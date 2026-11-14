@@ -1,0 +1,7 @@
+# Copy to dynlimit.toml (optional). Relative paths are relative to this file.
+[paths]
+config_root = "configs"
+data_root = "data"
+# CarSim dataset directory (must contain simfile.sim when using --plant carsim).
+# Override priority: CLI --carsim-db > env DYNLIMIT_CARSIM_DB > this file > {repo}/carsim_db
+carsim_db = "carsim_db"

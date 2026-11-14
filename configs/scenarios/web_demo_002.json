@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "web_demo_002",
+  "track_id": "oval_01",
+  "ego": {
+    "vehicle_config_id": "mock_bicycle",
+    "initial_pose": {
+      "x_m": 15.087950603921598,
+      "y_m": 1.680588317133541,
+      "z_m": 0.0,
+      "yaw_rad": -0.3198506952514144
+    },
+    "initial_speed_mps": 12.0
+  },
+  "npcs": [
+    {
+      "id": "npc_1",
+      "model": "trajectory",
+      "strategy": "trajectory",
+      "trajectory_xy": [
+        [
+          27.476607281324668,
+          1.7357663980552722
+        ]
+      ],
+      "speed_mps": 6.5,
+      "loop": true,
+      "length_m": 4.0,
+      "width_m": 2.0,
+      "lane_index": 0,
+      "strategy_params": {}
+    },
+    {
+      "id": "npc_2",
+      "model": "trajectory",
+      "strategy": "trajectory",
+      "trajectory_xy": [
+        [
+          62.27201850074896,
+          -1.9959811472853577
+        ]
+      ],
+      "speed_mps": 6.0,
+      "loop": true,
+      "length_m": 4.0,
+      "width_m": 2.0,
+      "lane_index": 0,
+      "strategy_params": {}
+    }
+  ],
+  "obstacles": [],
+  "controller": {
+    "type": "pure_pursuit",
+    "params": {
+      "throttle_cmd": 0.35,
+      "lookahead_m": 12
+    }
+  },
+  "termination": {
+    "max_sim_time_s": 90.0,
+    "stop_on_collision": false,
+    "stop_on_off_track": false
+  }
+}

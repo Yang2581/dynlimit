@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "notes": "Copy to configs/carsim_platform_io.json when CarSim Additional Data has these Imports (Replace). Without this file, DynLimit uses steer-only (lateral) and CarSim owns longitudinal speed.",
+  "input_list": [
+    "IMP_STEER_L1",
+    "IMP_STEER_R1",
+    "IMP_THROTTLE_ENGINE",
+    "IMP_FBK_PDL"
+  ],
+  "output_list": ["Vy", "Vx", "Yaw", "AVz", "Yo", "Xo", "Ax", "Ay", "AAz"],
+  "motor_torque_nm": 200.0
+}

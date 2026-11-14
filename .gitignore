@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Runtime output (keep the folder placeholder)
+data/experiments/*
+!data/experiments/.gitkeep
+
+# Local overrides
+.env
+dynlimit.local.toml
+carsim_db/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

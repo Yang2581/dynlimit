@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "4highway_demo",
+  "track_id": "4highway",
+  "ego": {
+    "vehicle_config_id": "mock_bicycle",
+    "initial_pose": {
+      "x_m": 5.149669873635119,
+      "y_m": -2.2553416233902723,
+      "z_m": 0.0,
+      "yaw_rad": 0.03012307910179032
+    },
+    "initial_speed_mps": 12.0
+  },
+  "npcs": [
+    {
+      "id": "npc_1",
+      "model": "trajectory",
+      "strategy": "trajectory",
+      "trajectory_xy": [
+        [
+          78.0,
+          -6.0
+        ]
+      ],
+      "speed_mps": 6.0,
+      "loop": false,
+      "length_m": 4.0,
+      "width_m": 2.0,
+      "lane_index": 0,
+      "strategy_params": {}
+    },
+    {
+      "id": "npc_ny2iq",
+      "model": "trajectory",
+      "strategy": "trajectory",
+      "trajectory_xy": [
+        [
+          46.0,
+          2.0
+        ]
+      ],
+      "speed_mps": 6.0,
+      "loop": false,
+      "length_m": 4.0,
+      "width_m": 2.0,
+      "lane_index": 2,
+      "strategy_params": {}
+    },
+    {
+      "id": "npc_ny4s8",
+      "model": "trajectory",
+      "strategy": "trajectory",
+      "trajectory_xy": [
+        [
+          68.0,
+          -2.0
+        ]
+      ],
+      "speed_mps": 6.0,
+      "loop": false,
+      "length_m": 4.0,
+      "width_m": 2.0,
+      "lane_index": 1,
+      "strategy_params": {}
+    }
+  ],
+  "obstacles": [],
+  "controller": {
+    "type": "lattice_pid_ml",
+    "params": {
+      "throttle_cmd": 0.35,
+      "lookahead_m": 12,
+      "horizon_m": 40,
+      "lc_length_m": 30,
+      "replan_every_n": 1
+    }
+  },
+  "termination": {
+    "max_sim_time_s": 60.0,
+    "stop_on_collision": true,
+    "stop_on_off_track": true
+  }
+}

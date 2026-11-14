@@ -1,0 +1,5 @@
+﻿# Platform paths. Relative values are relative to this file.
+[paths]
+config_root = "configs"
+data_root = "data"
+carsim_db = "carsim_db"

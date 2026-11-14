@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "track_id": "4highway",
+  "closed_loop": false,
+  "width_m": 16.0,
+  "friction_mu": 1.0,
+  "centerline_m": [
+    [0.0, 0.0, 0.0],
+    [120.0, -0.5, 0.0],
+    [250.0, -1.8, 0.0],
+    [416.7905952989126, -2.9728914587071245, 0.0]
+  ],
+  "sampling_resolution_m": 0.5,
+  "name": "track_ynvjku",
+  "notes": null,
+  "num_lanes": 4,
+  "lane_width_m": 4.0,
+  "reference_line_m": [
+    [0.0, 0.0, 0.0],
+    [120.0, -0.5, 0.0],
+    [250.0, -1.8, 0.0],
+    [414.95691864846106, -3.032617955328547, 0.0]
+  ],
+  "reference_lateral_m": null,
+  "friction_zones": []
+}
