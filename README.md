@@ -10,6 +10,8 @@
 
 This folder is a **stable end-user snapshot**. Default workflow uses the **Mock** plant (no CarSim required).
 
+**Paper:** [DynLimit: A Simulation Benchmark for Dynamics-Critical Planning and Control](https://arxiv.org/abs/2611.19785) (arXiv:2611.19785).
+
 ### What’s new in v0.1.1
 
 - Lane-local planning controllers: `lane_pp`, `lattice_pid_ml` (plus existing `lattice_pid` / `strategy01`)

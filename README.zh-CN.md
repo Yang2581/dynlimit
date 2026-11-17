@@ -10,6 +10,8 @@
 
 本目录是**稳定的终端用户发布快照**。默认用 **Mock** plant 即可运行，**不需要** CarSim。
 
+**论文：** [DynLimit: A Simulation Benchmark for Dynamics-Critical Planning and Control](https://arxiv.org/abs/2611.19785)（arXiv:2611.19785）。
+
 ### v0.1.1 更新
 
 - 车道局部规划控制器：`lane_pp`、`lattice_pid_ml`（以及既有 `lattice_pid` / `strategy01`）
